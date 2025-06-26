@@ -1,6 +1,6 @@
 import requests
 
-def get_bgb_price():
+def get_bgb_price(default_price=4):
     """
     Ambil harga terakhir BGB/USDT dari Bitget Market API.
     """
@@ -15,8 +15,9 @@ def get_bgb_price():
         price = float(data['data']['close'])
         return price
     except Exception as e:
-        print(f"Error fetching price: {e}")
-        return None  # fallback jika gagal
+        print(f"[WARN] Gagal mengambil harga dari API: {e}")
+        print(f"[INFO] Menggunakan harga fallback: {default_price}")
+        return default_price
 
 def calculate_order_size(symbol="BGBUSDT"):
     """
