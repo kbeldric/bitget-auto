@@ -4,7 +4,7 @@ def get_bgb_price(default_price=4):
     """
     Ambil harga terakhir BGB/USDT dari Bitget Market API.
     """
-    url = "https://api.bitget.com/api/v2/spot/market/tickers"
+    url = "https://api.bitget.com/api/v2/spot/market/tickers?symbol=BGBUSDT"
     params = {
         "symbol": "BGBUSDT"
     }
