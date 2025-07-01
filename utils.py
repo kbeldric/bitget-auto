@@ -4,7 +4,7 @@ def get_bgb_price(default_price=4):
     """
     Ambil harga terakhir BGB/USDT dari Bitget Market API.
     """
-    url = "https://api.bitget.com/api/v2/spot/market/tickers?symbol=BGBUSDT_SPBL"
+    url = "https://api.bitget.com/api/v2/spot/market/tickers"
     params = {
         "symbol": "BGBUSDT_SPBL"  # Pastikan menggunakan symbol format SPBL di Bitget 
     }
@@ -44,8 +44,8 @@ def calculate_order_size(symbol="BGBUSDT_SPBL"):
 
 
 # Contoh penggunaan
-if __name__ == "__main__":
+'''if __name__ == "__main__":
     current_price = get_bgb_price()
     print(f"Harga BGB saat ini: {current_price}")
     order_size = calculate_order_size()
-    print(f"Jumlah BGB yang akan dibeli: {order_size}")
+    print(f"Jumlah BGB yang akan dibeli: {order_size}")'''
