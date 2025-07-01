@@ -44,8 +44,8 @@ def calculate_order_size(symbol="BGBUSDT_SPBL"):
 
 
 # Contoh penggunaan
-'''if __name__ == "__main__":
+if __name__ == "__main__":
     current_price = get_bgb_price()
     print(f"Harga BGB saat ini: {current_price}")
     order_size = calculate_order_size()
-    print(f"Jumlah BGB yang akan dibeli: {order_size}")'''
+    print(f"Jumlah BGB yang akan dibeli: {order_size}")
