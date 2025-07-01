@@ -6,7 +6,7 @@ def get_bgb_price(default_price=4):
     """
     url = "https://api.bitget.com/api/v2/spot/market/tickers"
     params = {
-        "symbol": "BGBUSDT_SPBL"  # Pastikan menggunakan symbol format SPBL di Bitget 
+        "symbol": "BGBUSDT"  # Pastikan menggunakan symbol format SPBL di Bitget 
     }
     try:
         response = requests.get(url, params=params)
